@@ -1,0 +1,1153 @@
+<!doctype html>
+<html class="no-js" lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Vida Marina | Veterinaria y Salud Acuática</title>
+    <meta name="description" content="Vida Marina: servicios veterinarios acuáticos, sanidad en acuicultura e investigación en Santa Cruz de Yojoa, Cortés, Honduras.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+
+    <!-- Fuentes originales -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS de la plantilla -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/gijgo.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        :root {
+            --primary-blue: #006d77;
+            --dark-blue: #0a192f;
+            --accent-cyan: #00b4d8;
+            --light-cyan: #90e0ef;
+            --light-blue-bg: #f4f9fc;
+            --footer-bg: #123047;
+            --gradient-ocean: linear-gradient(
+                135deg,
+                #0a192f 0%,
+                #006d77 50%,
+                #00b4d8 100%
+            );
+            --font-heading: 'Playfair Display', serif;
+            --font-body: 'Poppins', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 90px;
+        }
+
+        body {
+            font-family: var(--font-body) !important;
+            color: #4a5568;
+            background: #fff;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6,
+        .slider_text h3,
+        .section_title h3,
+        .footer_title {
+            font-family: var(--font-heading) !important;
+            letter-spacing: -0.01em;
+        }
+
+        p, a, li, button, input, textarea {
+            font-family: var(--font-body);
+        }
+
+        a {
+            transition: color .3s ease;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        /* Encabezado */
+        .header-top_area {
+            background: var(--dark-blue) !important;
+        }
+
+        .main-header-area {
+            background: rgba(255,255,255,.97);
+        }
+
+        #navigation li a {
+            transition: color .3s ease;
+        }
+
+        #navigation li a:hover {
+            color: var(--accent-cyan);
+        }
+
+        /* Botones */
+        .boxed-btn4,
+        .boxed-btn3 {
+            display: inline-block;
+            background: var(--gradient-ocean) !important;
+            background-size: 200% auto !important;
+            border: none !important;
+            color: #fff !important;
+            font-family: var(--font-body) !important;
+            font-weight: 600 !important;
+            border-radius: 30px !important;
+            padding: 14px 28px !important;
+            transition: all .4s cubic-bezier(.165,.84,.44,1) !important;
+            box-shadow: 0 4px 15px rgba(0,180,216,.25) !important;
+        }
+
+        .boxed-btn4:hover,
+        .boxed-btn3:hover {
+            background-position: right center !important;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,180,216,.4) !important;
+        }
+
+        /* Hero principal */
+        .slider_area .single_slider {
+            position: relative;
+            isolation: isolate;
+            min-height: 650px;
+            background-size: cover;
+            background-position: center;
+            overflow: hidden;
+        }
+
+        .slider_area .single_slider::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            background: linear-gradient(
+                120deg,
+                rgba(10,25,47,.88),
+                rgba(0,95,115,.69),
+                rgba(0,180,216,.25)
+            );
+            animation: oceanGlow 9s ease-in-out infinite alternate;
+        }
+
+        .slider_text {
+            position: relative;
+            z-index: 2;
+            padding: 80px 0;
+        }
+
+        .slider_text h3 {
+            font-size: clamp(34px, 5vw, 54px) !important;
+            line-height: 1.2 !important;
+            margin-bottom: 24px;
+        }
+
+        .slider_text h3 span {
+            color: var(--light-cyan) !important;
+            font-style: italic;
+        }
+
+        .slider_text p {
+            max-width: 650px;
+            line-height: 1.9;
+            margin-bottom: 30px;
+        }
+
+        /* Brillo ambiental */
+        .ambient_section {
+            position: relative;
+            isolation: isolate;
+        }
+
+        .ambient_section::before {
+            content: "";
+            position: absolute;
+            width: 260px;
+            height: 260px;
+            border-radius: 50%;
+            top: 10%;
+            left: -130px;
+            background: rgba(0,180,216,.08);
+            filter: blur(45px);
+            z-index: -1;
+            pointer-events: none;
+            animation: ambientFloat 8s ease-in-out infinite;
+        }
+
+        .ambient_section::after {
+            content: "";
+            position: absolute;
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            bottom: 5%;
+            right: -100px;
+            background: rgba(0,95,115,.07);
+            filter: blur(40px);
+            z-index: -1;
+            pointer-events: none;
+            animation: ambientFloat 10s ease-in-out infinite reverse;
+        }
+
+        /* Servicios */
+        .service_area {
+            position: relative;
+        }
+
+        .single_service {
+            background: #fff;
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(0,180,216,.15);
+            transition: transform .4s ease, box-shadow .4s ease,
+                        border-color .4s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,.035);
+            height: 100%;
+        }
+
+        .single_service:hover {
+            transform: translateY(-10px);
+            border-color: var(--accent-cyan);
+            box-shadow: 0 15px 35px rgba(0,180,216,.17);
+        }
+
+        .img-cover-aquatic {
+            display: block;
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 12px;
+            transition: transform .6s ease;
+        }
+
+        .single_service:hover .img-cover-aquatic {
+            transform: scale(1.035);
+        }
+
+        .service_thumb {
+            overflow: hidden;
+            border-radius: 12px;
+        }
+
+        .service_content h3 {
+            font-size: 23px;
+            margin-bottom: 15px;
+        }
+
+        .service_content p {
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        /* Especies acuáticas */
+        .aquatic_species_section {
+            background: var(--light-blue-bg);
+            padding: 90px 0;
+            position: relative;
+            isolation: isolate;
+        }
+
+        .species_card {
+            background: #fff;
+            border-radius: 18px;
+            overflow: hidden;
+            border: 1px solid rgba(0,95,115,.08);
+            box-shadow: 0 10px 25px rgba(10,25,47,.05);
+            transition: transform .4s ease, box-shadow .4s ease,
+                        border-color .4s ease;
+            margin-bottom: 30px;
+            height: calc(100% - 30px);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .species_card:hover {
+            transform: translateY(-8px);
+            border-color: var(--accent-cyan);
+            box-shadow: 0 20px 40px rgba(0,180,216,.18);
+        }
+
+        .species_img_wrapper {
+            position: relative;
+            width: 100%;
+            height: 230px;
+            overflow: hidden;
+            background: #e5f3f7;
+        }
+
+        .species_img_wrapper img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform .65s cubic-bezier(.165,.84,.44,1);
+        }
+
+        .species_card:hover .species_img_wrapper img {
+            transform: scale(1.08);
+        }
+
+        .species_badge {
+            position: absolute;
+            top: 15px;
+            right: 12px;
+            background: rgba(10,25,47,.84);
+            color: var(--light-cyan);
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: .4px;
+            padding: 7px 12px;
+            border-radius: 20px;
+            border: 1px solid rgba(144,224,239,.3);
+            text-transform: uppercase;
+            max-width: calc(100% - 24px);
+        }
+
+        .species_content {
+            padding: 25px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .species_content h4 {
+            color: var(--dark-blue);
+            font-size: 21px;
+            margin-bottom: 12px;
+            font-weight: 700;
+            line-height: 1.35;
+        }
+
+        .species_content p {
+            font-size: 13px;
+            line-height: 1.85;
+            color: #5a6a85;
+            margin-bottom: 20px;
+        }
+
+        .species_meta {
+            margin-top: auto;
+            padding-top: 15px;
+            border-top: 1px solid #edf2f7;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 11px;
+            color: var(--primary-blue);
+            font-weight: 600;
+        }
+
+        .species_meta i {
+            margin-right: 5px;
+            color: var(--accent-cyan);
+        }
+
+        /* Animaciones originales de flotación */
+        @keyframes floatEffect {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-8px);
+            }
+        }
+
+        @keyframes oceanGlow {
+            0% {
+                opacity: .85;
+                background-position: 0% 50%;
+            }
+            100% {
+                opacity: 1;
+                background-position: 100% 50%;
+            }
+        }
+
+        @keyframes ambientFloat {
+            0%, 100% {
+                transform: translate(0,0) scale(1);
+            }
+            50% {
+                transform: translate(25px,-20px) scale(1.1);
+            }
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(25px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Tecnología y diagnóstico */
+        .pet_care_area {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pet_thumb img {
+            display: block;
+            width: 100%;
+            min-height: 300px;
+            object-fit: cover;
+            border-radius: 16px;
+            box-shadow: 0 15px 35px rgba(10,25,47,.12);
+        }
+
+        /* Estadísticas */
+        .adapt_area {
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg,#0a192f 0%,#164e63 55%,#087e8b 100%) !important;
+            color: #fff;
+            padding: 80px 0;
+        }
+
+        .adapt_area::before {
+            content: "";
+            position: absolute;
+            width: 420px;
+            height: 420px;
+            border: 1px solid rgba(144,224,239,.15);
+            border-radius: 50%;
+            top: -180px;
+            right: -100px;
+            box-shadow:
+                0 0 0 35px rgba(144,224,239,.035),
+                0 0 0 75px rgba(144,224,239,.025);
+            animation: ambientFloat 12s ease-in-out infinite;
+            pointer-events: none;
+        }
+
+        .adapt_area .section_title,
+        .adapt_area .adapt_about {
+            position: relative;
+            z-index: 1;
+        }
+
+        .adapt_area .section_title h3,
+        .adapt_area .section_title p {
+            color: #fff;
+        }
+
+        .adapt_area .section_title h3 span {
+            color: var(--light-cyan);
+        }
+
+        .single_adapt {
+            background: rgba(255,255,255,.07);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,.15);
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 20px;
+            animation: floatEffect 4s ease-in-out infinite;
+        }
+
+        .single_adapt:nth-child(even) {
+            animation-delay: 2s;
+        }
+
+        .adapt_content h3 {
+            color: var(--light-cyan) !important;
+            font-family: var(--font-heading) !important;
+            font-size: 42px;
+            font-weight: 700;
+        }
+
+        .adapt_content p {
+            color: #fff;
+        }
+
+        /* Equipo profesional */
+        .team_area {
+            position: relative;
+        }
+
+        .single_team {
+            background: #fff;
+            border-radius: 16px;
+            padding-bottom: 20px;
+            transition: transform .35s ease, box-shadow .35s ease;
+        }
+
+        .single_team:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 15px 35px rgba(10,25,47,.1);
+        }
+
+        .team_thumb_img {
+            display: block;
+            width: 100%;
+            height: 380px;
+            object-fit: cover;
+            object-position: center 25%;
+            border-radius: 16px;
+            background: #e5f3f7;
+        }
+
+        .team_area .member_name h4 {
+            color: var(--dark-blue);
+            margin-top: 18px;
+        }
+
+        .team_area .member_name p {
+            font-size: 14px;
+            color: #5a6a85;
+            padding: 0 12px;
+        }
+
+        /* Pie de página más claro */
+        .footer {
+            background: linear-gradient(135deg,#163b50 0%,#20566b 100%) !important;
+            border-top: 3px solid var(--accent-cyan);
+        }
+
+        .footer .footer_title {
+            color: #b8f1fa !important;
+            font-size: 20px;
+        }
+
+        .footer p,
+        .footer li,
+        .footer .address_line li,
+        .footer .links li a {
+            color: #e1edf2;
+        }
+
+        .footer a {
+            transition: color .3s ease;
+        }
+
+        .footer a:hover {
+            color: var(--light-cyan) !important;
+        }
+
+        .footer .address_line a {
+            color: #b8f1fa !important;
+        }
+
+        .copy-right_text {
+            background: rgba(0,0,0,.12);
+        }
+
+        .copy_right {
+            color: #d1e3ea !important;
+        }
+
+        /* Accesibilidad: respeta preferencias de movimiento */
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                scroll-behavior: auto !important;
+                animation-duration: .01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: .01ms !important;
+            }
+        }
+
+        /* Adaptación a móviles */
+        @media (max-width: 767px) {
+            .slider_area .single_slider {
+                min-height: 540px;
+            }
+
+            .slider_text {
+                padding: 65px 0;
+            }
+
+            .slider_text h3 {
+                font-size: 36px !important;
+            }
+
+            .aquatic_species_section {
+                padding: 60px 0;
+            }
+
+            .species_img_wrapper {
+                height: 220px;
+            }
+
+            .team_thumb_img {
+                height: 340px;
+            }
+
+            .adapt_content h3 {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <div class="header-area">
+            <div class="header-top_area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-8">
+                            <div class="short_contact_list">
+                                <ul>
+                                    <li>
+                                        <a href="tel:+50497460615">
+                                            <i class="fa fa-phone"></i> +504 9746-0615
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#contacto">
+                                            <i class="fa fa-map-marker"></i> Santa Cruz de Yojoa, Cortés
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-4">
+                            <div class="social_media_links">
+                                <a href="#" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+                                <a href="#" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sticky-header" class="main-header-area">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-3 col-lg-3">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img src="img/Logo.png"
+                                         alt="Logo de Vida Marina"
+                                         style="max-height:55px;width:auto;">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-9 col-lg-9">
+                            <div class="main-menu d-none d-lg-block">
+                                <nav aria-label="Navegación principal">
+                                    <ul id="navigation">
+                                        <li><a href="#inicio">Inicio</a></li>
+                                        <li><a href="#nosotros">Nosotros</a></li>
+                                        <li><a href="#servicios">Servicios</a></li>
+                                        <li><a href="#especies">Especies</a></li>
+                                        <li><a href="#equipo">Equipo</a></li>
+                                        <li><a href="#contacto">Contacto</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- PORTADA -->
+    <section class="slider_area">
+        <div class="single_slider d-flex align-items-center"
+             style="background-image:url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=1920&auto=format&fit=crop');">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-10">
+                        <div class="slider_text">
+                            <h1 class="text-white wow fadeInUp"
+                                data-wow-duration="1s"
+                                data-wow-delay=".2s"
+                                style="font-family:var(--font-heading);font-size:clamp(34px,5vw,54px);line-height:1.2;">
+                                Ciencia y Cuidado Especializado en
+                                <br>
+                                <span>Vida Marina</span>
+                            </h1>
+
+                            <p class="text-white wow fadeInUp"
+                               data-wow-duration="1s"
+                               data-wow-delay=".4s">
+                                Servicios veterinarios integrales, investigación diagnóstica y consultoría técnica para la preservación y producción sostenible de vida acuática.
+                            </p>
+
+                            <a href="#contacto"
+                               class="boxed-btn4 wow fadeInUp"
+                               data-wow-duration="1s"
+                               data-wow-delay=".6s">
+                                Agendar Consulta Médica
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="service_area section_padding ambient_section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7 col-md-10">
+                    <div class="section_title text-center mb-5">
+                        <h2>Nuestros Servicios Veterinarios</h2>
+                        <p>Atención médica especializada, diagnóstico clínico e innovación para ecosistemas marinos y continentales.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <article class="single_service">
+                        <div class="service_thumb text-center mb-4">
+                            <img
+                                src="https://images.unsplash.com/photo-1522069169874-c58ec4b76be5?q=80&w=600&auto=format&fit=crop"
+                                alt="Peces en un entorno acuático"
+                                class="img-cover-aquatic"
+                                loading="lazy">
+                        </div>
+                        <div class="service_content text-center">
+                            <h3>Medicina Veterinaria</h3>
+                            <p>Diagnóstico clínico, tratamientos preventivos y orientación veterinaria para especies acuáticas ornamentales y comerciales.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <article class="single_service">
+                        <div class="service_thumb text-center mb-4">
+                            <img
+                                src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?q=80&w=600&auto=format&fit=crop"
+                                alt="Agua del océano"
+                                class="img-cover-aquatic"
+                                loading="lazy">
+                        </div>
+                        <div class="service_content text-center">
+                            <h3>Sanidad en Acuicultura</h3>
+                            <p>Monitoreo sanitario, planes de bioseguridad y gestión de la calidad fisicoquímica del agua en sistemas de producción.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <article class="single_service">
+                        <div class="service_thumb text-center mb-4">
+                            <img
+                                src="https://images.unsplash.com/photo-1582967788606-a171c1080cb0?q=80&w=600&auto=format&fit=crop"
+                                alt="Entorno de investigación marina"
+                                class="img-cover-aquatic"
+                                loading="lazy">
+                        </div>
+                        <div class="service_content text-center">
+                            <h3>Patología e Investigación</h3>
+                            <p>Apoyo diagnóstico, investigación microbiológica y estudio de enfermedades que afectan a los organismos acuáticos.</p>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ESPECIES: SE ELIMINÓ LA MANTA RAYA -->
+    <section id="especies" class="aquatic_species_section ambient_section">
+        <div class="container">
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10">
+                    <div class="section_title text-center mb-5">
+                        <h2>Especies bajo Cuidado Clínico</h2>
+                        <p>Información sobre distintas especies acuáticas y las áreas de atención veterinaria relacionadas con su cuidado.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <!-- DELFÍN -->
+                <div class="col-lg-4 col-md-6">
+                    <article class="species_card">
+                        <div class="species_img_wrapper">
+                            <img
+                                src="https://images.unsplash.com/photo-1570481662006-a3a1374699e8?q=80&w=600&auto=format&fit=crop"
+                                alt="Delfín en el agua"
+                                loading="lazy"
+                                onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=600&auto=format&fit=crop';">
+                            <span class="species_badge">Mamíferos Marinos</span>
+                        </div>
+                        <div class="species_content">
+                            <h3>Delfín Mular (Tursiops)</h3>
+                            <p>Información sobre salud preventiva, seguimiento veterinario, evaluación de la condición corporal y cuidado de mamíferos marinos bajo supervisión profesional.</p>
+                            <div class="species_meta">
+                                <span><i class="fa fa-stethoscope"></i> Medicina preventiva</span>
+                                <span>Según evaluación</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- TORTUGA MARINA -->
+                <div class="col-lg-4 col-md-6">
+                    <article class="species_card">
+                        <div class="species_img_wrapper">
+                            <img
+                                src="https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?q=80&w=600&auto=format&fit=crop"
+                                alt="Tortuga marina nadando"
+                                loading="lazy"
+                                onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=600&auto=format&fit=crop';">
+                            <span class="species_badge">Reptiles Acuáticos</span>
+                        </div>
+                        <div class="species_content">
+                            <h3>Tortuga Marina</h3>
+                            <p>Orientación sobre evaluación clínica, atención de lesiones y recuperación de tortugas marinas, en coordinación con centros autorizados de rescate.</p>
+                            <div class="species_meta">
+                                <span><i class="fa fa-medkit"></i> Rehabilitación</span>
+                                <span>Según el caso</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- PECES DE ARRECIFE -->
+                <div class="col-lg-4 col-md-6">
+                    <article class="species_card">
+                        <div class="species_img_wrapper">
+                            <img
+                                src="https://images.unsplash.com/photo-1524704654690-b56c05c78a00?q=80&w=600&auto=format&fit=crop"
+                                alt="Peces tropicales de arrecife"
+                                loading="lazy"
+                                onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1522069169874-c58ec4b76be5?q=80&w=600&auto=format&fit=crop';">
+                            <span class="species_badge">Teleósteos Marinos</span>
+                        </div>
+                        <div class="species_content">
+                            <h3>Peces de Arrecife</h3>
+                            <p>Prevención y evaluación de enfermedades parasitarias, observación del comportamiento y control de parámetros de calidad del agua.</p>
+                            <div class="species_meta">
+                                <span><i class="fa fa-flask"></i> Parasitología</span>
+                                <span>Seguimiento</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- TILAPIA -->
+                <div class="col-lg-4 col-md-6">
+                    <article class="species_card">
+                        <div class="species_img_wrapper">
+                            <img
+                                src="https://images.unsplash.com/photo-1534043464124-3be32fe000c9?q=80&w=600&auto=format&fit=crop"
+                                alt="Peces de cultivo"
+                                loading="lazy"
+                                onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1522069169874-c58ec4b76be5?q=80&w=600&auto=format&fit=crop';">
+                            <span class="species_badge">Especies de Cultivo</span>
+                        </div>
+                        <div class="species_content">
+                            <h3>Tilapia y Peces Dulceacuícolas</h3>
+                            <p>Asesoría en prevención de enfermedades, bioseguridad, vigilancia sanitaria y buenas prácticas para la producción acuícola.</p>
+                            <div class="species_meta">
+                                <span><i class="fa fa-shield"></i> Bioseguridad</span>
+                                <span>Por lotes</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- CORALES Y ANÉMONAS -->
+                <div class="col-lg-4 col-md-6">
+                    <article class="species_card">
+                        <div class="species_img_wrapper">
+                            <img
+                                src="https://images.unsplash.com/photo-1546026423-cc4642628d2b?q=80&w=600&auto=format&fit=crop"
+                                alt="Corales de un arrecife"
+                                loading="lazy"
+                                onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1518837695005-2083093ee35b?q=80&w=600&auto=format&fit=crop';">
+                            <span class="species_badge">Invertebrados y Corales</span>
+                        </div>
+                        <div class="species_content">
+                            <h3>Corales y Anémonas</h3>
+                            <p>Información sobre calidad del agua, estabilidad de parámetros, equilibrio de minerales y conservación de ecosistemas de arrecife.</p>
+                            <div class="species_meta">
+                                <span><i class="fa fa-leaf"></i> Conservación</span>
+                                <span>Monitoreo</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TECNOLOGÍA Y DIAGNÓSTICO -->
+    <section class="pet_care_area section_padding ambient_section">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-lg-5 col-md-6">
+                    <div class="pet_thumb">
+                        <img
+                            src="https://images.unsplash.com/photo-1582967788606-a171c1080cb0?q=80&w=800&auto=format&fit=crop"
+                            alt="Entorno de laboratorio e investigación acuática"
+                            class="img-cover-aquatic"
+                            loading="lazy">
+                    </div>
+                </div>
+
+                <div class="col-lg-6 offset-lg-1 col-md-6">
+                    <div class="pet_info">
+                        <div class="section_title">
+                            <h2><span>Tecnología Diagnóstica para la</span><br> Salud Acuática</h2>
+                            <p>Promovemos la evaluación sanitaria, el diagnóstico y las buenas prácticas para apoyar el cuidado de organismos acuáticos y la producción responsable.</p>
+                            <a href="#contacto" class="boxed-btn3">Solicitar Información</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ESTADÍSTICAS ANIMADAS -->
+    <section class="adapt_area">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+
+                <div class="col-lg-5">
+                    <div class="adapt_help">
+                        <div class="section_title">
+                            <h2><span>Comprometidos con la</span><br> Sanidad Acuática</h2>
+                            <p>Trabajamos para promover el bienestar de las especies acuáticas, el conocimiento científico y las buenas prácticas de producción.</p>
+                            <a href="#contacto" class="boxed-btn3 mt-3">Contactar al Especialista</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="adapt_about">
+                        <div class="row align-items-center">
+
+                            <div class="col-lg-6 col-md-6">
+                                <div class="single_adapt text-center">
+                                    <div class="adapt_content">
+                                        <h3><i class="fa fa-water"></i></h3>
+                                        <p>Salud de Ecosistemas</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6">
+                                <div class="single_adapt text-center">
+                                    <div class="adapt_content">
+                                        <h3><i class="fa fa-flask"></i></h3>
+                                        <p>Apoyo Diagnóstico</p>
+                                    </div>
+                                </div>
+
+                                <div class="single_adapt text-center">
+                                    <div class="adapt_content">
+                                        <h3><i class="fa fa-leaf"></i></h3>
+                                        <p>Producción Sostenible</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- EQUIPO: DR. EDAN GALEANO -->
+    <section id="equipo" class="team_area section_padding ambient_section">
+        <div class="container">
+
+            <div class="row justify-content-center">
+                <div class="col-lg-7 col-md-10">
+                    <div class="section_title text-center mb-5">
+                        <h2>Nuestro Especialista</h2>
+                        <p>Compromiso con el cuidado de la vida acuática, la investigación y la salud animal.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <article class="single_team">
+
+                        <div class="thumb mb-3">
+                            <!-- Guarda la fotografía enviada como img/edan-galeano.jpg -->
+                            <img
+                                src="img/edan-galeano.jpg"
+                                alt="Dr. Edan Galeano"
+                                class="team_thumb_img"
+                                loading="lazy"
+                                onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=600&auto=format&fit=crop';">
+                        </div>
+
+                        <div class="member_name text-center">
+                            <div class="mamber_inner">
+                                <h3>Dr. Edan Galeano</h3>
+                                <p>Medicina Veterinaria y Salud Acuática</p>
+                            </div>
+                        </div>
+
+                    </article>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACTO Y PIE DE PÁGINA -->
+    <footer id="contacto" class="footer">
+        <div class="footer_top section_padding">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-xl-3 col-md-6 col-lg-3">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">Contacto Directo</h3>
+                            <ul class="address_line">
+                                <li>
+                                    <a href="tel:+50497460615">
+                                        <i class="fa fa-phone"></i> +504 9746-0615
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:edangaleano3@gmail.com">
+                                        <i class="fa fa-envelope"></i>
+                                        edangaleano3@gmail.com
+                                    </a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-map-marker"></i>
+                                    Santa Cruz de Yojoa, Cortés, B. La Gloria, Honduras
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6 col-lg-3">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">Especialidades</h3>
+                            <ul class="links">
+                                <li><a href="#especies">Salud de Especies Acuáticas</a></li>
+                                <li><a href="#especies">Sanidad en Acuicultura</a></li>
+                                <li><a href="#especies">Investigación Acuática</a></li>
+                                <li><a href="#equipo">Atención Especializada</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6 col-lg-3">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">Navegación</h3>
+                            <ul class="links">
+                                <li><a href="index.html">Inicio</a></li>
+                                <li><a href="#especies">Especies</a></li>
+                                <li><a href="#equipo">Nuestro Especialista</a></li>
+                                <li><a href="#contacto">Contacto</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6 col-lg-3">
+                        <div class="footer_widget">
+                            <div class="footer_logo">
+                                <a href="index.html">
+                                    <img
+                                        src="img/Logo.png"
+                                        alt="Logo de Vida Marina"
+                                        style="max-height:50px;width:auto;">
+                                </a>
+                            </div>
+                            <p class="address_text mt-3">
+                                Vida Marina — Salud, Ciencia e Innovación Acuática.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="copy-right_text">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <p class="copy_right text-center">
+                            Copyright &copy;
+                            <span id="current-year"></span>
+                            Vida Marina. Todos los derechos reservados.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/scrollIt.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/nice-select.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/gijgo.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        // Año automático
+        document.getElementById("current-year").textContent =
+            new Date().getFullYear();
+
+        // Inicialización segura de animaciones WOW si la plantilla la incluye
+        if (typeof WOW !== "undefined") {
+            new WOW({
+                boxClass: "wow",
+                animateClass: "animated",
+                offset: 40,
+                mobile: true,
+                live: true
+            }).init();
+        }
+    </script>
+
+</body>
+</html>
